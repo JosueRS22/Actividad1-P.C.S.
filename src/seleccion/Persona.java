@@ -22,4 +22,25 @@ public abstract class Persona {
     public abstract void viajar();
 
     public abstract void concentrarse();
+
+    public int getIdentificador(){
+        return identificador;
+    }
+
+    public String getNombre(){
+        return nombre;
+    }
+
+    public String getApellido(){
+        return apellido;
+    }
+
+    public int getEdad(){
+        return edad;
+    }
+
+    @Override
+    public String toString() {
+        return "ID: " + identificador + ", Nombre: " + nombre + " "+ apellido + ", Edad: " + edad;
+    }
 }
