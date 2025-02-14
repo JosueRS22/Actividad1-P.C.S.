@@ -12,21 +12,30 @@ public class Entrenador extends Persona {
         this.idFederacion = idFederacion;
     }
 
+    public int getIdFederacion(){
+        return idFederacion;
+    }
+    
+    public void dirigirPartido(){
+        System.out.println(" esta dirigiendo el partido...");
+    }
+
+    public void dirigirEntrenamiento(){
+        System.out.println(" esta dirigiendo el entrenamiento...");
+    }
+
     @Override
     public void concentrarse() {
-        System.out.println("esta concentrandose en el entrenamiento...");
+        System.out.println(" esta concentrandose en el entrenamiento...");
     }
 
     @Override
     public void viajar() {
-        System.out.println("esta viajando al juego...");
+        System.out.println(" esta viajando al juego...");
     }
 
-    public void dirigirPartido(){
-        System.out.println("esta dirigiendo el partido...");
-    }
-
-    public void dirigirEntrenamiento(){
-        System.out.println("esta dirigiendo el entrenamiento...");
+    @Override
+    public String toString() {
+        return super.toString() + ", ID Federacion: " + idFederacion;
     }
 }
