@@ -15,21 +15,36 @@ public class Futbolista extends Persona {
         this.posicionEnCancha = posicionEnCancha;
     }
 
+    public int getNumeroJugador(){
+        return numeroJugador;
+    }
+
+    public String getPosicionEnCancha(){
+        return posicionEnCancha;
+    }
+
+
+    public void jugarPartido(){
+        System.out.println(" esta jugando...");
+    }
+
+    public void entrenar(){
+        System.out.println(" esta entrenando...");
+    }
+
     @Override
     public void concentrarse() {
-        System.out.println("esta concentrado en el juego...");
+        System.out.println(" esta concentrado en el juego...");
     }
 
     @Override
     public void viajar() {
-        System.out.println("esta viajando al juego...");
+        System.out.println(" esta viajando al juego...");
     }
 
-    public void jugarPartido(){
-        System.out.println("esta jugando...");
+    @Override
+    public String toString() {
+        return super.toString() + " , Dorsal: " + numeroJugador + ", Posición: " + posicionEnCancha;
     }
 
-    public void entrenar(){
-        System.out.println("esta entrenando...");
-    }
 }
