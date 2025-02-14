@@ -16,17 +16,30 @@ public class Masajista extends Persona{
         this.aniosExperiencia = aniosExperiencia;
     }
 
+    public String getProfesion(){
+        return profesion;
+    }
+
+    public int getAniosExperiencia(){
+        return aniosExperiencia;
+    }
+
+    public void darMasaje(){
+        System.out.println(" esta dando masaje...");
+    }
+
     @Override
     public void concentrarse() {
-        System.out.println("esta concentrandose en el masaje...");
+        System.out.println(" esta concentrandose en el masaje...");
     }
 
     @Override
     public void viajar() {
-        System.out.println("esta viajando al juego...");
+        System.out.println(" esta viajando al juego...");
     }
 
-    public void darMasaje(){
-        System.out.println("esta dando masaje...");
+    @Override
+    public String toString() {
+        return super.toString() + ", Profesion: " + profesion + ", Años: " + aniosExperiencia;
     }
 }
